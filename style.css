@@ -1,0 +1,225 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #e0e1dd;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+.container {
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially hidden */
+    width: 250px;
+    height: 100%;
+    background-color: #1b263b;
+    transition: left 0.3s ease;
+}
+
+.sidebar.active {
+    left: 0; /* Shows the sidebar */
+}
+
+/* Main content */
+.main-content {
+    margin-left: 0;
+    transition: margin-left 0.3s ease;
+}
+
+.sidebar .close-btn {
+    font-size: 30px;
+    color: white;
+    background: transparent;
+    border: none;
+    position:absolute;
+    margin-bottom: 10rem;
+    top: 10px;
+    right: 10px;
+}
+
+/* Style for the menu button */
+.menu-btn {
+    font-size: 30px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: #333;
+}
+
+/* Sidebar links */
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 20px;
+    margin-top: 3rem;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    background-color: #415a77;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #444;
+}
+
+/* Main Content Styles */
+.main-content {
+    margin-left: 0;
+    transition: margin-left 0.3s ease;
+}
+
+.main-content .menu-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position:absolute;
+    top: 1rem;
+    left: 1rem;
+    color: white;
+}
+.container .menu-icon {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+.sidebar.open + .main-content {
+    margin-left: 250px;
+}
+
+/* Header Styles */
+header {
+    background-color: #0d1b2a;
+    color: #fff;
+    text-align: center;
+    margin-left: 0;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header span {
+    color: #f39c12;
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+}
+
+/* Section Styles */
+.section {
+    padding: 2rem 1rem;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.section p, .section ul {
+    font-size: 1rem;
+    font-style: bold;
+    margin: 0 auto;
+    max-width: 600px;
+    list-style:circle;
+    width:100%;
+}
+#skills ul li {
+    font-size: 1.5rem;
+}
+/* Project Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.project-card {
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    background-color:#778da9;
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: white;
+    font-style: bold;
+}
+.project-card img{
+    width: 280PX;
+    height: max-content;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 600px;
+    margin: 0 auto;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    width: fit-content;
+    margin: auto;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #f39c12;
+    color: black;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}

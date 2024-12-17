@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">&#10096;</button>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#personal-information">Personal Information</a></li>
+                <li><a href="#internship">Internship</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div class="container">
+                <button class="menu-btn" onclick="toggleSidebar()">&#10097;</button>
+                <img class="menu-icon" src="dp.png.jpg" alt="Profile Picture">
+                <h1>Hi, I'm <span>PARAS KUMAR</span></h1>
+                <p>Web Developer | Designer | Programmer</p>
+            </div>
+        </header>
+
+        <section id="about" class="section">
+            <h2><b>ABOUT ME</b></h2>
+            <p>
+                Hello! My name is <b>Paras Kumar</b>, and I am an enthusiastic and dedicated <b>MCA</b> (Master of Computer Applications) student. I hail from Darbhanga, Bihar, a place known for its rich culture and heritage. Currently, I am pursuing my MCA at <b>Galgotias University</b>, Greater Noida, where I am gaining valuable knowledge and skills in the field of computer applications. As a <b>fresher</b>, I bring a strong passion for technology, problem-solving, and continuous learning.
+                <!-- Rest of the content -->
+            </p>
+        </section>
+
+        <section id="projects" class="section">
+            <h2><b>PROJECT'S</b></h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Simple Calculator</h3>
+                    <img src="PROJECTCALCULATOR.png" alt="Simple Calculator">
+                    <p>A simple Calculator project is a basic application that allows users to perform arithmetic operations like Addition, Subtraction, Multiplication, and Division. It typically has a user interface with buttons for digits (0-9), operations (+,-,*,/) to display the result. This is a simple project to help programmers practice.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Normal Shopping Website</h3>
+                    <img src="shoppingweb.png" alt="Shopping Website">
+                    <p>This project involves designing a basic shopping website that allows customers to view products and add them to a cart. The website will include a clean and responsive layout, ensuring a smooth user experience across various devices. This is only the front-end work for the user interface.</p>
+                </div>
+                <div class="project-card">
+                    <h3><b>TIC TAC GAME</b></h3>
+                    <img src="TICTACTOEGAME.png" alt="Tic Tac Toe Game">
+                    <p>Tic-Tac-Toe is a classic two-player game played on a 3x3 grid. One player uses "X" and the other uses "O." The players take turns placing their respective symbols in empty grid spaces, with the goal of forming a horizontal, vertical, or diagonal line of three of their own symbols. The first player to achieve this wins the game. If all the grid spaces are filled without a winner, the game ends in a draw. It is a simple yet strategic game often used to teach basic concepts of logic and planning.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2><b>SKILLS</b></h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>&#9993; CONTACT ME</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <footer>
+            <p><b>Paras Kumar</b> Thanks for viewing</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
