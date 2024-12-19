@@ -2,8 +2,10 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #e0e1dd;
+    background-position:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://img.freepik.com/free-vector/abstract-backg…428ddb5c9604bf0a386615521308e33064f6c605afe&w=360);
 }
 
 h1, h2 {
@@ -26,7 +28,7 @@ a {
     left: -250px; /* Initially hidden */
     width: 250px;
     height: 100%;
-    background-color: #1b263b;
+    background-color: #778da9;
     transition: left 0.3s ease;
 }
 
@@ -41,14 +43,14 @@ a {
 }
 
 .sidebar .close-btn {
-    font-size: 30px;
-    color: white;
+    font-size: 2rem;
+    color: black;
     background: transparent;
     border: none;
+    cursor: pointer;
     position:absolute;
-    margin-bottom: 10rem;
-    top: 10px;
-    right: 10px;
+    top: 1rem;
+    right: 2rem;
 }
 
 /* Style for the menu button */
@@ -76,13 +78,18 @@ a {
     text-decoration: none;
     font-size: 18px;
     display: block;
-    padding: 10px;
+    margin-top: 3rem;
+    margin-left: 1.75rem;
     transition: background-color 0.3s ease;
-    background-color: #415a77;
+
+}
+.sidebar nav ul li  #about {
+    margin-top: 7rem;
 }
 
 .sidebar nav ul li a:hover {
-    background-color: #444;
+    color: black;
+    text-decoration: underline red;
 }
 
 /* Main Content Styles */
@@ -91,22 +98,23 @@ a {
     transition: margin-left 0.3s ease;
 }
 
-.main-content .menu-btn {
+.main-content .open-btn {
     background: none;
     border: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     cursor: pointer;
     position:absolute;
     top: 1rem;
-    left: 1rem;
-    color: white;
+    left: 2rem;
+    color: black;
+    font-style: bold;
 }
 .container .menu-icon {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     margin: auto;
     border-radius: 50%;
-    border: 3px solid black;
+    border:none;
 }
 
 .sidebar.open + .main-content {
@@ -115,8 +123,12 @@ a {
 
 /* Header Styles */
 header {
-    background-color: #0d1b2a;
-    color: #fff;
+    background-image:url(https://img.freepik.com/free-photo/particle-lines-futuristic-network-background_53876-129729.jpg);
+    background-position: center;
+    background-size: cover;
+    height: max-content;
+    background-repeat: repeat;
+    color: black;
     text-align: center;
     margin-left: 0;
 }
@@ -126,7 +138,9 @@ header h1 {
 }
 
 header span {
-    color: #f39c12;
+    color: red;
+    font-size: 1.25rem;
+    text-shadow: black 1px 1px;
 }
 
 header p {
@@ -141,10 +155,11 @@ header p {
     width: fit-content;
     margin: auto;
 }
-
 .section h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
+    color: #f39c12;
+    text-shadow: rgb(15, 15, 15) 2px 1px;
 }
 
 .section p, .section ul {
@@ -152,11 +167,23 @@ header p {
     font-style: bold;
     margin: 0 auto;
     max-width: 600px;
-    list-style:circle;
     width:100%;
 }
+
 #skills ul li {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    margin-bottom: 1rem;
+    list-style: none;
+    padding: 0;
+    transition: background-color 0.3s ease;
+    color: black;
+    border: 1px solid black;
+}
+#skills ul li:hover {
+    background-color: red;
+    font-size: 110%;
 }
 /* Project Grid */
 .project-grid {
@@ -178,6 +205,7 @@ header p {
     margin-top: 0;
     color: white;
     font-style: bold;
+    text-shadow: black 1px 2px;
 }
 .project-card img{
     width: 280PX;
@@ -217,9 +245,14 @@ form button:hover {
 
 /* Footer */
 footer {
-    background: #333;
-    color: #fff;
+    color: black;
     text-align: center;
-    padding: 1rem 0;
+    padding: 1rem;
     margin-top: 2rem;
+    background-size: cover;
+    background-image: url(https://img.freepik.com/free-photo/particle-lines-futuristic-network-background_53876-129729.jpg);
+}
+footer p spam {
+    color:#f39c12;
+    font-size: 2rem;
 }
